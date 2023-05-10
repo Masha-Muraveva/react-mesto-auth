@@ -59,7 +59,7 @@ function AddPlacePopup (props) {
       type="url"
       id="link-input"
       name="link"
-      placeHolder="Ссылка на картинку"
+      placeholder="Ссылка на картинку"
       className="popup__form-data popup__form-data_type_card-link"
       autoComplete="off"
       required

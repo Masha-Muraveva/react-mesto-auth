@@ -2,6 +2,7 @@
 @import url(./vendor/fonts/inter.css);
 @import url(./blocks/body/body.css);
 @import url(./blocks/page/page.css);
+@import url(./blocks/main/main.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/profile/profile.css);
@@ -52,3 +53,16 @@
 @import url(./blocks/popup/__form-data/_type/popup__form-data_type_error.css);
 @import url(./blocks/popup/__form-data-error/popup__form-data-error.css);
 @import url(./blocks/popup/__form-data-error/_active/popup__form-data-error_active.css);
+@import url(./blocks/action-page/action-page.css);
+@import url(./blocks/action-page/__button/action-page__button.css);
+@import url(./blocks/action-page/__form/action-page__form.css);
+@import url(./blocks/action-page/__input/action-page__input.css);
+@import url(./blocks/action-page/__login-link/action-page__login-link.css);
+@import url(./blocks/action-page/__text/action-page__text.css);
+@import url(./blocks/action-page/__title/action-page__title.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__user-email/header__user-email.css);
+@import url(./blocks/popup/__img-answer/popup__img-answer.css);
+@import url(./blocks/popup/__title/_type/popup__title_type_tooltip.css);
+@import url(./blocks/popup/_type/popup_type_tooltip.css);
