@@ -145,7 +145,6 @@ function App() {
         })
   }
 
-
   const handleSignOut = () => {
     setEmail("");
     localStorage.removeItem("jwt");
@@ -164,26 +163,23 @@ function App() {
     })
   }
 
-  
-
   const handleSubmitRegister = (e) => {
     e.preventDefault()
     const { email, password } = form;
     auth.registration({ email, password })
       .then((res) => {
-        console.log(res.status);
         setForm({
           email: '',
           password: ''
         })
-        setIsInfoTooltipPopupOpen(true)
-        setErrorRegistration(true)
-        navigate('/sign-in', { replace: true })
+        setIsInfoTooltipPopupOpen(true);
+        setErrorRegistration(true);
+        navigate('/sign-in', { replace: true });
       })
-      .catch((err) => {
-        setIsInfoTooltipPopupOpen(true)
-        setErrorRegistration(false)
-        console.log(err);
+      .catch((error) => {
+        setIsInfoTooltipPopupOpen(true);
+        setErrorRegistration(false);
+        console.log(`Ошибка: ${error}`);
       })
   }
 
@@ -198,14 +194,14 @@ function App() {
             email: '',
             password: ''
           })
-          setLoggedIn(true)
+          setLoggedIn(true);
           navigate('/', { replace: true });
         }
       })
-      .catch(err => {
-        console.log(err)
-        setErrorRegistration(false)
-        setIsInfoTooltipPopupOpen(true)
+      .catch((error) => {
+        setErrorRegistration(false);
+        setIsInfoTooltipPopupOpen(true);
+        console.log(`Ошибка: ${error}`);
       })
   }
 
